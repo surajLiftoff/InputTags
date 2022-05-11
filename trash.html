@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./trash.css">
+    <script defer src="./trash.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Registration Form</h2>
+        </div>
+
+        <form id="form" class="form" action="#">
+            <div class="form-control">
+                <label for="username">Username: </label>
+                <input type="text" id="username">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="framework">Choose a framework:</label>
+                <select id="framework" name="framework" class="dropbtn">
+                <div class="dropdown-content">
+                    <option value="">Select a framework</option>
+                    <option value="Angular.js">Angular.js</option>
+                    <option value="Vue.js">Vue.js</option>
+                    <option value="Express.js">Express.js</option>
+                    <option value="Next.js">Next.js</option>
+                    
+                </div>
+            </select>
+                <small>Error message</small>
+            </div>
+            <div id="checkbox" class="form-control">
+                <div>
+                    <p>Select your learning platform:</p>
+                    <label for="l1"> <input type="checkbox"name="learning" value="udemy" id="l1">Udemy</label>
+                    <label for="l2"><input type="checkbox" name="learning" value="youtube" id="l2">Youtube</label>
+                    <label for="l3"><input type="checkbox" name="learning" value="docs" id="l3">Online Docs</label>
+                </div>
+                <small>Error message</small>
+            </div>
+            <div id="radio" class="form-control">
+                <label for="">Ready to dive in ?</label>
+                <div>
+                    <input type="radio" name="name" value="Yes" id="yes">
+                    <label for="yes">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" name="name" value="No" id="no">
+                    <label for="no">No</label>
+                </div>
+
+            </div>
+
+            <div>
+                <button id="btn">Show Selected Answer</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Output in drop -->
+    <div id="backdrop"></div>
+    <div id="output" class="outputPage">
+        <div class="output_content">
+        </div>
+    </div>
+
+    <!-- Output in the same page -->
+    <!-- <div id="output" class="form-control"></div> -->
+
+</body>
+
+</html>
